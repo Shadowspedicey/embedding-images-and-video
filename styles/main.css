@@ -1,0 +1,93 @@
+nav.main
+{
+	height: 60px;
+	width: 100%;
+	background-color: #202020;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 1.75rem;
+}
+
+nav.main button
+{
+	height: 24px;
+	width: 24px;
+}
+nav.main button:active
+{
+	background-color: gray;
+}
+
+nav.main svg
+{
+	fill: white;
+}
+
+nav.main .left
+{
+	display: flex;
+	align-items: center;
+}
+nav.main .left .youtube-home
+{
+	width: 100px;
+	fill: white;
+	margin-left: 1rem;
+}
+
+nav.main .middle
+{
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+nav.main .middle input
+{
+	width: 500px;
+	height: 100%;
+	background-color: #121212;
+
+	color: white;
+	font-size: 1.125em;
+
+	padding: 0.5rem 0.75rem;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+}
+nav.main .middle input:focus
+{
+	outline: none;
+	border: 1px solid blue;
+}
+nav.main #search
+{
+	background-color: #323232;
+	height: 100%;
+	width: 75px;
+}
+nav.main #search svg
+{
+	width: 20px;
+	height: 20px;
+}
+
+nav.main .right
+{
+	display: flex;
+	align-items: center;
+}
+nav.main .right button
+{
+	box-sizing: content-box;
+	padding: 0.25rem;
+	margin: 0 0.75rem;
+	border-radius: 50%;
+}
+#profile-button
+{
+	overflow: hidden;
+	padding: 0;
+	border-radius: 50%;
+}
