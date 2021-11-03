@@ -8,7 +8,18 @@ nav.main
 	justify-content: space-between;
 	align-items: center;
 
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+
 	padding: 0 1.75rem;
+}
+
+nav.main svg
+{
+	width: 24px;
+	height: 24px;
 }
 
 nav.main button
@@ -21,7 +32,7 @@ nav.main button:active
 	background-color: gray;
 }
 
-nav.main svg
+svg.white
 {
 	fill: white;
 }
@@ -90,4 +101,83 @@ nav.main .right button
 	overflow: hidden;
 	padding: 0;
 	border-radius: 50%;
+}
+
+main
+{
+	min-height: 100vh;
+	background-color: #181818;
+	padding: 1rem 0 1rem 7rem;
+}
+
+section#video
+{
+	max-width: 1300px;
+}
+
+.video-player .container
+{
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.video-player iframe
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#video header
+{
+	margin-top: 1.25rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#video header h1
+{
+	font-size: 1.125em;
+}
+
+#views-and-likes
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#views-and-likes h3
+{
+	color: #aaa;
+	font-size: 0.85em;
+}
+
+#views-and-likes .buttons
+{
+	font-size: 0.95em;
+	display: flex;
+	align-self: flex-end;
+}
+#views-and-likes .buttons button
+{
+	display: flex;
+	align-items: center;
+	margin: 0 0.5rem;
+}
+#views-and-likes .buttons svg
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 0.25rem;
+}
+
+#likes
+{
+	height: 50px;
+	display: flex;
+	border-bottom: 2px solid white;
 }
