@@ -1,3 +1,8 @@
+body
+{
+	background-color: #181818;
+}
+
 nav.main
 {
 	height: 60px;
@@ -106,13 +111,8 @@ nav.main .right button
 main
 {
 	min-height: 100vh;
-	background-color: #181818;
-	padding: 1rem 0 1rem 7rem;
-}
-
-section#video
-{
 	max-width: 1300px;
+	padding: 1rem 0 1rem 7rem;
 }
 
 .video-player .container
@@ -180,4 +180,63 @@ section#video
 	height: 50px;
 	display: flex;
 	border-bottom: 2px solid white;
+}
+
+#video-info
+{
+	margin: 0.75rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#poster
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-pic
+{
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+#subscribe
+{
+	background-color: #303030;
+	color: #aaa;
+	font-weight: bold;
+	padding: 0.75rem 1.25rem;
+}
+
+#bell
+{
+	width: 24px;
+	height: 24px;
+	margin: auto 0;
+}
+
+#subscribe,
+#bell
+{
+	margin: 0 0.75rem;
+}
+
+#description
+{
+	line-height: 18px;
+	white-space: pre-wrap;
+	margin-left: 64px;
+}
+
+#description a
+{
+	color: rgb(62, 166, 255);
+}
+
+#show-less
+{
+	color: #aaa;
+	font-size: 0.75em;
+	line-height: 20px;
 }
