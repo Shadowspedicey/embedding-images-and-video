@@ -3,6 +3,11 @@ body
 	background-color: #181818;
 }
 
+svg
+{
+	fill: white;
+}
+
 nav.main
 {
 	height: 60px;
@@ -197,6 +202,8 @@ main
 
 .profile-pic
 {
+	width: 48px;
+	height: 48px;
 	overflow: hidden;
 	border-radius: 50%;
 }
@@ -205,7 +212,7 @@ main
 {
 	background-color: #303030;
 	color: #aaa;
-	font-weight: bold;
+	font-weight: 500;
 	padding: 0.75rem 1.25rem;
 }
 
@@ -239,4 +246,98 @@ main
 	color: #aaa;
 	font-size: 0.75em;
 	line-height: 20px;
+}
+
+#comments header
+{
+	display: flex;
+	align-items: center;
+}
+
+#comments header button
+{
+	display: inline-flex;
+	align-items: center;
+	margin-left: 2rem;
+}
+#comments header svg
+{
+	height: 24px;
+	width: 24px;
+	margin-right: 0.5rem;
+}
+
+.comment
+{
+	display: flex;
+	margin: 1rem 0;
+}
+
+/* Selects the left part of the comment (profile pic) */
+.comment > a
+{
+	margin-right: 1rem;
+}
+
+.comment .profile-pic
+{
+	width: 40px;
+	height: 40px;
+}
+
+.comment header
+{
+	margin-bottom: 0.6rem;
+}
+
+.comment .username
+{
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-right: 0.5rem;
+}
+
+.comment .timestamp
+{
+	color: #aaa;
+	font-size: 0.75em;
+}
+
+.comment > div > p
+{
+	font-size: 0.9em;
+	line-height: 18px;
+}
+
+.comment .buttons
+{
+	color: #aaa;
+	font-size: 0.8em;
+	display: flex;
+	align-items: center;
+	margin-top: 0.75rem;
+}
+.comment .buttons button
+{
+	margin-right: 0.5rem;
+}
+.comment .buttons svg
+{
+	width: 16px;
+	height: 16px;
+}
+
+.comment .view-replies
+{
+	color: #3ea6ff;
+	font-size: 0.95em;
+	display: flex;
+	align-items: center;
+	position: relative;
+	right: 6px;
+	margin-top: 0.5rem;
+}
+.comment .view-replies svg
+{
+	fill: #3ea6ff;
 }
